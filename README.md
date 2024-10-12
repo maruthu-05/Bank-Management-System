@@ -55,21 +55,22 @@ The **Bank Management System** is a Python-based project that connects to a MySQ
 1. Make sure to configure the MySQL database credentials correctly in the Python script:
 
    ```python
+   import mysql.connector
    mydb = mysql.connector.connect(host="your_host",user="your_username",password="your_password",database="bank_management")
 Replace your_host, your_username, your_password, and bank_management with your actual MySQL database credentials.
 
 ## Usage Instructions
 
-# Adding a Customer
+### Adding a Customer
 
 - Run the script and choose the option to add a customer.
 - Provide details such as name, account number, phone number, and the system will automatically record the account creation date.
-- 
-# Withdrawing Amount
+  
+### Withdrawing Amount
 
 - Select the withdrawal option and input the account number and amount to be withdrawn.
   
-# Displaying Customer Information
+### Displaying Customer Information
 
 - Choose the relevant option to display customer details. You can view details for all customers or specific ones by account number.
 
